@@ -6,6 +6,8 @@
     --cor-preta: #000 ; 
     --cor-branca: white; 
     --cor--fundo: #FAFBFF;
+    --cor--botao1: #1CF365;
+    --cor--botao: #DF2F2F;
     --cor-vermelha: #c904044e;
     --cor-verde: #00d1465e;
     --cor-amarela: #bbd30861;
@@ -21,6 +23,7 @@
     font-family: 'Quicksand', sans-serif !important;
     box-sizing: border-box;
     transition: all 0.3s;
+    font-family: 'Quicksand', sans-serif;
 }
 
 
@@ -175,7 +178,8 @@ main #form #form-formularios form input{
     margin-bottom: 10px;
 }
 
-main #form #form-formularios form button{
+main #form #form-formularios form button,
+main #cadastro-endereco button{
     padding: 15px;
     border: none;
     background-color: var(--cor-principal);
@@ -337,7 +341,8 @@ main #forms{
     padding-bottom: 50px;
 }
 main #registro #registro-texto{
-    padding: 15px;
+    margin-top: -50px;
+    margin-bottom: 15px;
     text-align: center;
     font-size: 1.3em;
 }
@@ -371,6 +376,11 @@ main #registro #registro-formulario form button{
     margin-bottom: 20px;
 }
 
+main #cadastro-texto{
+    margin-top: 20px;
+    margin-bottom: 30px;
+
+}
 main #registro h3{
     text-align: center;
     font-size: 1.5em;
@@ -388,7 +398,7 @@ main #registro #registro-formulario form{
 }
 main #registro #registro-formulario form input{
     display: block;
-    padding: 15px;
+    padding: 12px;
     border: none;
     border-radius: 7px;
     border-bottom: 1px solid black;
@@ -403,10 +413,73 @@ main #registro #registro-formulario form button{
     border-radius: 10px;
     width: 200px;
     cursor: pointer;
-    margin-top: 20px;
-    margin-bottom: 20px;
 }
 
+#cadastro-endereco label{
+    display: block;
+}
+
+main{
+    padding: 35px;
+}
+
+main #cadastro-endereco{
+    padding: 15px;
+    border: none;
+    background-color: var(--cor--principal);
+    color: var(--cor--branca);
+    border-radius: 10px;
+    width: 200px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+main #cadastro-endereco input{
+    display: block;
+    padding: 12px;
+    border: none;
+    border-radius: 7px;
+    border-bottom: 1px solid black;
+    width: 90%;
+    margin-bottom: 10px;
+    box-shadow: 0px 5px 5px gray;
+}
+
+main #cadastro-endereco #linha1,
+main #cadastro-endereco #linha2,
+main #cadastro-endereco #linha3,
+main #cadastro-endereco #linha4{
+    margin: 20px;
+    width: 90vw;
+    display: grid;
+}
+
+main #cadastro-endereco #linha1{
+    grid-template-columns: 3fr 2fr;
+}
+
+main #cadastro-endereco #linha2{
+    grid-template-columns: 2fr 2fr 2fr 1fr;
+}
+
+
+main #cadastro-endereco #linha3{
+    grid-template-columns: 2fr 2fr 1fr;
+}
+
+main #cadastro-endereco #linha4{
+    grid-template-columns: 3fr 2fr;
+}
+
+main #cadastro-endereco #botoesespec{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+main #cadastro-endereco #botaosubmit{
+    background-color: #1CF365;
+    
 .customHeader,
 main #sidebar-opcoes{
     border-radius: 20px;
@@ -471,3 +544,6 @@ main #informacoes-ui #ConsultasCanceladas{
     border: 3px solid var(--cor-vermelha);
 }
 
+main #cadastro-endereco #botaoreset{
+    background-color: #DF2F2F;
+}

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="../styles/mobile.css">
+    <title>Cadastro</title>
+</head>
+<body>
+    <header id="header">
+        <img src="../img/logo.png" alt="Logo">
+        <nav>
+            <a href="../front/index.html">Sair</a>
+        </nav>
+    </header>
+    <main>
+        <form action="">
+            <section id="cadastro-endereco">
+                <h1>Cadastro de clientes</h1>
+                <div id="linha1">
+                        <div class="cadastro-cliente-nome">
+                            <label id="nome" for="nome">Nome Completo</label>
+                            <input type="text" name="nome" id="nome1" required minlength="4" placeholder="Insira seu nome completo">
+                        </div>
+                        <div class="cadastro-cliente-email">
+                            <label id="nome" for="email">E-mail</label>
+                            <input type="text" name="email" id="email1" required minlength="4" placeholder="Insira seu E-mail">
+                        </div>
+                </div>
+
+                <div id="linha2">
+                    <div class="cadastro-cliente-cpf">
+                        <label id="cpf" for="cpf">CPF</label>
+                        <input type="text" name="cpf" id="cpf1" required minlength="4" placeholder="Insira seu CPF">
+                    </div>
+                    <div class="cadastro-cliente-whatsapp">
+                        <label id="whats" for="whats">Whatsapp</label>
+                        <input type="text" name="whats" id="whats1" required minlength="4" placeholder="Insira seu telefone">
+                    </div>
+                    <div class="cadastro-cliente-contato">
+                        <label id="contato" for="conatato">Outro contato</label>
+                        <input type="text" name="contato" id="contato1" required minlength="4" placeholder="Insira seu telefone">
+                    </div>
+                    <div class="cadastr-cliente-nascimento">
+                        <label id="nascimento" for="nascimento">Data nascimento</label>
+                        <input type="date" name="nascimento" id="nascimento1" required minlength="4" placeholder="Insira sua data nascimento">
+                    </div>
+                </div>
+                <h2>Endereço</h2>
+                <div id="linha3">
+                    <div class="cadastro-cliente-cep">
+                        <label id="cep" for="nome">CEP</label>
+                        <input type="text" name="nome" id="no1me" required minlength="4" placeholder="Insira seu nome completo">
+                    </div>
+                    <div class="cadastro-cliente-cidade">
+                        <label id="cidade" for="cidade">Cidade</label>
+                        <input type="text" name="cidade" id="email1" required minlength="1" placeholder="Insira sua cidade">
+                    </div>
+                    <div class="cadastro-cliente-uf">
+                        <label id="uf" for="cpf">UF</label>
+                        <input type="text" name="uf" id="cpf1" required minlength="1" placeholder="Insira seu estado">
+                    </div>
+                </div>
+                <div id="linha4">
+                    <div class="cadastro-cliente-bairro">
+                        <label id="bairro" for="bairro">Bairro</label>
+                        <input type="text" name="bairro" id="whats1" required minlength="1" placeholder="Insira seu bairro">
+                    </div>
+                    <div class="cadastro-cliente-numero">
+                        <label id="numero" for="numero">Número</label>
+                        <input type="text" name="numero" id="contato1" required minlength="1" placeholder="Insira seu número">
+                    </div>
+                </div>
+                <div id="botoesespec">
+                    <button type="submit" id="botaosubmit">Salvar</button>
+                    <button type="reset" id="botaoreset">Cancelar</button>
+                </div>
+            </section>
+        </form>
+    </main>
+</body>
+</html>

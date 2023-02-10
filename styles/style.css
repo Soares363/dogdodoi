@@ -2,12 +2,15 @@
 /* "." puxa classe, "#" puxa ID*/
 :root{
     --cor-principal: #EA1C81;
-    --cor-header: #D8F1FB ;
+    --cor-header: rgba(216, 241, 251, 0.51);
     --cor-preta: #000 ; 
     --cor-branca: white; 
     --cor--fundo: #FAFBFF;
-
-
+    --cor-vermelha: #c904044e;
+    --cor-verde: #00d1465e;
+    --cor-amarela: #bbd30861;
+    --cor-cinzaazul: #365e8f4a;
+    --cor-headerescurinho: rgba(216, 241, 251, 0.8);
 }
 
 *{
@@ -17,7 +20,7 @@
     transition: all 1s;
     font-family: 'Quicksand', sans-serif !important;
     box-sizing: border-box;
-
+    transition: all 0.3s;
 }
 
 
@@ -39,18 +42,13 @@
     text-decoration: none;
     color: var(--cor-preta) ;
     font-family: 'Quicksand', sans-serif;
-
+    border-radius: 25px;
 }
 
 #header nav a:hover{
     /* hover: quando eu passar o mouse em cima, executa algo */
     background-color: var(--cor-principal);
     color: var(--cor-branca);
-    border-radius: 25px;
-}
-
-#header nav .semBordaFeia:hover{
-    background-color: transparent;
 }
 
 
@@ -72,7 +70,6 @@
 
 .marginlateral{
     margin: 0px 20px;
-    
 }
 
 main #banner{
@@ -96,7 +93,7 @@ main #banner h1{
     font-size: 2em;
 }
 
-main #banner button {
+main #banner button{
     background-color: var(--cor-principal);
     color: var(--cor-branca);
     border: none;
@@ -164,11 +161,11 @@ main #form #form-formularios form{
 }
 
 main #form #form-formularios form input{
+    box-shadow: 0px 4px 5px gray;
     display: block;
     padding: 15px;
     border: none;
     border-radius: 7px;
-    border-bottom: 1px solid black;
     width: 380px;
     margin-bottom: 10px;
 }
@@ -274,6 +271,7 @@ main #forms #forms-formularios{
     gap: 20px;
 }
 
+
 .form-grid{
     display: grid;
     grid-template-columns: 7fr;
@@ -327,3 +325,144 @@ main h1{
 .bCancelar{
     background-color: red !important;
 }
+
+
+main #forms{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+main #registro #registro-texto{
+    padding: 15px;
+    text-align: center;
+    font-size: 1.3em;
+}
+
+main #registro #registro-formulario form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+main #registro #registro-formulario form input{
+    display: block;
+    padding: 15px;
+    border: none;
+    border-radius: 7px;
+    border-bottom: 1px solid black;
+    width: 380px;
+    margin-bottom: 10px;
+}
+
+main #registro #registro-formulario form button{
+    padding: 15px;
+    border: none;
+    background-color: var(--cor-principal);
+    color: var(--cor-branca);
+    border-radius: 10px;
+    width: 200px;
+    cursor: pointer;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+main #registro h3{
+    text-align: center;
+    font-size: 1.5em;
+    padding: 15px;
+}
+main #registro{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+main #registro #registro-formulario form{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+main #registro #registro-formulario form input{
+    display: block;
+    padding: 15px;
+    border: none;
+    border-radius: 7px;
+    border-bottom: 1px solid black;
+    width: 320px;
+    margin-bottom: 10px;
+}
+main #registro #registro-formulario form button{
+    padding: 15px;
+    border: none;
+    background-color: var(--cor-principal);
+    color: var(--cor-branca);
+    border-radius: 10px;
+    width: 200px;
+    cursor: pointer;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.customHeader,
+main #sidebar-opcoes{
+    border-radius: 20px;
+}
+
+main #content-inf{
+    display: grid;
+    grid-template-columns: 25vw 75vw;
+    top: 106px;
+    height: calc(100vh - 106px);
+}
+
+main #sidebar-opcoes{
+    background-color: var(--cor-headerescurinho);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main #sidebar-opcoes div{
+    height: 50px;
+    margin-bottom: 10px;
+    background-color: var(--cor-principal);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    border-radius: 20px;
+    margin-top: 10px;
+}
+
+main #sidebar-opcoes div a{
+    text-decoration: none;
+    font-weight: bolder;
+    font-size: 20px;
+    color: white;
+}
+
+main #informacoes-ui div{
+    background-color: #fff;
+    height: 82px;
+    border-radius: 20px;
+    margin: 10px;
+    width: calc(48% - 60px);
+    display: inline-block;
+    padding: 20px;
+}
+
+main #informacoes-ui #CadastroClientes{
+    border: 3px solid var(--cor-amarela);
+}
+
+main #informacoes-ui #CadastroUsuarios{
+    border: 3px solid var(--cor-verde);
+}
+
+main #informacoes-ui #CadastroConsultas{
+    border: 3px solid var(--cor-cinzaazul);
+}
+
+main #informacoes-ui #ConsultasCanceladas{
+    border: 3px solid var(--cor-vermelha);
+}
+

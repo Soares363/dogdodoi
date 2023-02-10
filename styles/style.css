@@ -96,6 +96,10 @@ main #banner h1{
     font-size: 2em;
 }
 
+main #banner .marginCimaBaixo{
+    margin-top: -25px;
+}
+
 main #banner button {
     background-color: var(--cor-principal);
     color: var(--cor-branca);

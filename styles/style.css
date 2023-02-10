@@ -257,5 +257,82 @@ main #forms #forms-formularios{
 }
 
 
+main #forms{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+main #registro #registro-texto{
+    padding: 15px;
+    text-align: center;
+    font-size: 1.3em;
+}
+
+main #registro #registro-formulario form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+main #registro #registro-formulario form input{
+    display: block;
+    padding: 15px;
+    border: none;
+    border-radius: 7px;
+    border-bottom: 1px solid black;
+    width: 380px;
+    margin-bottom: 10px;
+}
+
+main #registro #registro-formulario form button{
+    padding: 15px;
+    border: none;
+    background-color: var(--cor-principal);
+    color: var(--cor-branca);
+    border-radius: 10px;
+    width: 200px;
+    cursor: pointer;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+main #registro h3{
+    text-align: center;
+    font-size: 1.5em;
+    padding: 15px;
+}
+main #registro{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+main #registro #registro-formulario form{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+main #registro #registro-formulario form input{
+    display: block;
+    padding: 15px;
+    border: none;
+    border-radius: 7px;
+    border-bottom: 1px solid black;
+    width: 320px;
+    margin-bottom: 10px;
+}
+main #registro #registro-formulario form button{
+    padding: 15px;
+    border: none;
+    background-color: var(--cor-principal);
+    color: var(--cor-branca);
+    border-radius: 10px;
+    width: 200px;
+    cursor: pointer;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+
+
 
 

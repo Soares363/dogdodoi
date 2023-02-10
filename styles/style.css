@@ -1,0 +1,261 @@
+/* root: criação de variaveis */
+/* "." puxa classe, "#" puxa ID*/
+:root{
+    --cor-principal: #EA1C81;
+    --cor-header: #D8F1FB ;
+    --cor-preta: #000 ; 
+    --cor-branca: white; 
+    --cor--fundo: #FAFBFF;
+
+
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    /* transition: define o tempo q vai demorar pra decoração sumir */
+    transition: all 1s;
+    font-family: 'Quicksand', sans-serif;
+
+}
+
+
+
+#header{
+    /* background-colors muda a cor do fundo */
+    background-color: var(--cor-header);
+    /* display mexe com o posicionamento */
+    display: flex;
+    /* justfy content muda o posicionamento de algo. mexe no eixo x */
+    justify-content: space-between;
+    /* padding muda o espaço em volta de algo */
+    /* align: mexe no eixo y */
+    align-items: center;
+}
+
+#header nav a{
+
+    text-decoration: none;
+    color: var(--cor-preta) ;
+    font-family: 'Quicksand', sans-serif;
+
+}
+
+#header nav a:hover{
+    /* hover: quando eu passar o mouse em cima, executa algo */
+    background-color: var(--cor-principal);
+    color: var(--cor-branca);
+    border-radius: 25px;
+}´
+
+
+#header nav #user img{
+    position: absolute;
+    width: 63px;
+    height: 49px;
+    right: 124px;
+    top: 7px;
+    
+}
+
+
+
+.marginlateral{
+    margin: 0px 20px;
+    
+}
+
+main #banner{
+    background-image: url("../img/Banner.png");
+    /* o 'calc' caucula numeros em diferentes medidas, nesse caso ele está cauculando onde o banner deve começar, o 116 é resultado da soma entre a parte de cima e a de baixo com o numero dentro do elemneto computed do inspecionar do google */
+    height: calc(100vh - 116px);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.marginCimaBaixo{
+    margin: 20px 0px;
+}
+
+main #banner h1{
+    color: var(--cor-principal);
+    font-size: 2em;
+}
+
+main #banner button {
+    background-color: var(--cor-principal);
+    color: var(--cor-branca);
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+main #banner button:hover{
+    cursor: pointer;
+}
+
+header, main #banner button,
+#header nav a:hover, 
+#Bemvindos div,
+main #beneficios #beneficios-nossosbeneficio h3{
+    padding: 15px;
+}
+
+#Bemvindos{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+#Bemvindos #Bemvindos-boasvindas h3{
+    color: var(--cor-principal);
+    margin-bottom: 10px;
+}
+
+main #beneficios{
+    background-color: var(--cor--fundo);
+    color: var(--cor-principal)
+}
+
+main #beneficios #beneficios-nossosbeneficios h3{
+    text-align: center;
+    font-size: 1.5em;
+}
+
+    main #beneficios #beneficios-nossosbeneficios p{
+        text-align: center;
+        padding: 15px;
+}
+
+main #beneficios #beneficios-servicos{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+
+main #form{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+main #form #form-texto{
+    padding: 15px;
+    text-align: center;
+    font-size: 1em;
+}
+
+main #form #form-formularios form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+main #form #form-formularios form input{
+    display: block;
+    padding: 15px;
+    border: none;
+    border-radius: 7px;
+    border-bottom: 1px solid black;
+    width: 380px;
+    margin-bottom: 10px;
+}
+
+main #form #form-formularios form button{
+    padding: 15px;
+    border: none;
+    background-color: var(--cor-principal);
+    color: var(--cor-branca);
+    border-radius: 10px;
+    width: 200px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+
+
+main #form #form-formularios{
+    background-image: url(../img/dog.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+
+
+#rodape{
+    background-color: var(--cor-header);
+    text-align: center;
+    padding: 15px;
+}
+
+
+#whats img{
+    position: fixed;
+    width: 40px;
+    height:40px;
+    right: 10px;
+    bottom: 10px;
+}
+
+#whats img:hover{
+    /* hover: quando eu passar o mouse em cima, executa algo */
+    width: 60px;
+    height: 60px;
+
+}
+
+/* pagina de login ------------------------------------------------------------------------------------------------------------*/
+
+
+main #forms{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+main #forms #forms-texto{
+    padding: 15px;
+    text-align: center;
+    font-size: 1em;
+}
+
+main #forms #forms-formularios form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+main #forms #forms-formularios form input{
+    display: block;
+    padding: 15px;
+    border: none;
+    border-radius: 7px;
+    border-bottom: 1px solid black;
+    width: 380px;
+    margin-bottom: 10px;
+}
+
+main #forms #forms-formularios form button{
+    padding: 15px;
+    border: none;
+    background-color: var(--cor-principal);
+    color: var(--cor-branca);
+    border-radius: 10px;
+    width: 200px;
+    cursor: pointer;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+
+
+main #forms #forms-formularios{
+    background-image: url(../img/gato\ vagabundo.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+
+
+

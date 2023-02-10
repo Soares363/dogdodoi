@@ -14,7 +14,7 @@
     margin: 0px;
     padding: 0px;
     /* transition: define o tempo q vai demorar pra decoração sumir */
-    transition: all 1s;
+    transition: all 0.3s;
     font-family: 'Quicksand', sans-serif;
 
 }
@@ -38,15 +38,14 @@
     text-decoration: none;
     color: var(--cor-preta) ;
     font-family: 'Quicksand', sans-serif;
-
+    border-radius: 25px;
 }
 
 #header nav a:hover{
     /* hover: quando eu passar o mouse em cima, executa algo */
     background-color: var(--cor-principal);
     color: var(--cor-branca);
-    border-radius: 25px;
-}´
+}
 
 
 #header nav #user img{

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="../styles/mobile.css">
+    <title>Consultas</title>
+</head>
+<body>
+    <header id="header">
+        <img src="../img/logo.png" alt="Logo">
+        <nav>
+            <a href="../front/index.html">Sair</a>
+        </nav>
+    </header>
+
+    <main class="main-consultas">
+        <div>
+            <h1>Marque uma consulta</h1>
+        </div>
+
+        <div id="froms3">
+            <form action="">
+
+                <div class="forms-consulta1">
+                    <div class="forms-consulta-nome">
+                        <label for="nome">Nome completo:</label>
+                        <input type="name2" name="name" id="nome2" required minlength="4" maxlength="140" placeholder="Insira seu nome">
+                    </div>
+<!-- -------------------------------------------------------------------------------------------------- -->
+                    <div class="forms-consulta-data">
+                        <label for="data">Data</label>
+                        <input type="date" name="data" id="data" required minlength="10" maxlength="10" placeholder="xx/xx/xxxx">
+                    </div>
+<!-- --------------------------------------------------------------------------------------- -->
+                    <div class="forms-consulta-hora">
+                        <label for="hora">Hora marcada</label>
+                        <input type="time" name="hora" id="hora" required minlength="8" maxlength="15" placeholder="Hora">
+                    </div>
+<!-- --------------------------------------------------------------------------------------- -->
+                </div>
+
+                <div class="form-grid">
+                    <label for="caixatx">Observações e motivos para a consulta:</label>
+                    <textarea name="Observações adicionais" id="caixatx" cols="30" rows="10"></textarea>
+                </div>
+
+                <div class="butao">
+                    <button class="bSalvar" type="submit">Salvar</button>
+                    <button class="bCancelar" type="reset">Cancelar</button>
+                </div>
+            </form>
+        </div>
+    </main>
+</body>
+</html>

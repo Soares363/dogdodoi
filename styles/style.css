@@ -2,18 +2,26 @@
 /* "." puxa classe, "#" puxa ID*/
 :root{
     --cor-principal: #EA1C81;
-    --cor-header: #D8F1FB ;
+    --cor-header: rgba(216, 241, 251, 0.51);
     --cor-preta: #000 ; 
     --cor-branca: white; 
     --cor--fundo: #FAFBFF;
     --cor--botao1: #1CF365;
     --cor--botao: #DF2F2F;
+    --cor-vermelha: #c904044e;
+    --cor-verde: #00d1465e;
+    --cor-amarela: #bbd30861;
+    --cor-cinzaazul: #365e8f4a;
+    --cor-headerescurinho: rgba(216, 241, 251, 0.8);
 }
 
 *{
     margin: 0px;
     padding: 0px;
     /* transition: define o tempo q vai demorar pra decoração sumir */
+    transition: all 1s;
+    font-family: 'Quicksand', sans-serif !important;
+    box-sizing: border-box;
     transition: all 0.3s;
     font-family: 'Quicksand', sans-serif;
 }
@@ -56,11 +64,15 @@
     
 }
 
+.user{
+    width: 30px;
+    height: 30px;
+    margin-bottom: -10px;
+}
 
 
 .marginlateral{
     margin: 0px 20px;
-    
 }
 
 main #banner{
@@ -84,7 +96,12 @@ main #banner h1{
     font-size: 2em;
 }
 
-main #banner button {
+
+main #banner .marginCimaBaixo{
+    margin-top: -25px;
+}
+
+main #banner button{
     background-color: var(--cor-principal);
     color: var(--cor-branca);
     border: none;
@@ -152,11 +169,11 @@ main #form #form-formularios form{
 }
 
 main #form #form-formularios form input{
+    box-shadow: 0px 4px 5px gray;
     display: block;
     padding: 15px;
     border: none;
     border-radius: 7px;
-    border-bottom: 1px solid black;
     width: 380px;
     margin-bottom: 10px;
 }
@@ -235,7 +252,8 @@ main #forms #forms-formularios form input{
     margin-bottom: 10px;
 }
 
-main #forms #forms-formularios form button{
+main #forms #forms-formularios form button,
+#froms3 .butao button{
     padding: 15px;
     border: none;
     background-color: var(--cor-principal);
@@ -253,6 +271,68 @@ main #forms #forms-formularios{
     background-image: url(../img/gato\ vagabundo.png);
     background-repeat: no-repeat;
     background-size: contain;
+}
+
+/* Pagina de consultas-------------------------------------------------------------------------------------------------------------------------------------------------------- */
+.forms-consulta1{
+    display: grid;
+    grid-template-columns: 6fr 1fr 1fr;
+    gap: 20px;
+}
+
+
+.form-grid{
+    display: grid;
+    grid-template-columns: 7fr;
+}
+
+main h1{
+    color: black;
+    padding-bottom: 50px;
+    font-family: 'Quicksand', sans-serif;
+}
+
+#froms3 label {
+    display: block;
+}
+
+#froms3 input {
+    border-radius: 20px;
+    width: 100%;
+} 
+
+.main-consultas{
+    padding: 35px;
+}
+
+#froms3 input{
+    display: block;
+    padding: 15px;
+    border: 1px solid black;
+    border-radius: 7px;
+    /* border-bottom: 1px solid black; */
+    /* width: 380px; */
+    margin-bottom: 10px;
+} 
+
+#froms3 textarea{
+    border-radius: 10PX;
+    height: 300px;
+    /* height: 400px;
+    width: 1000px; */
+    width: 100%;
+}
+
+.forms-consulta-hora{
+    width: 100% !important;
+}
+
+.bSalvar{
+    background-color: green !important;
+}
+
+.bCancelar{
+    background-color: red !important;
 }
 
 
@@ -399,6 +479,69 @@ main #cadastro-endereco #botoesespec{
 
 main #cadastro-endereco #botaosubmit{
     background-color: #1CF365;
+    
+.customHeader,
+main #sidebar-opcoes{
+    border-radius: 20px;
+}
+
+main #content-inf{
+    display: grid;
+    grid-template-columns: 25vw 75vw;
+    top: 106px;
+    height: calc(100vh - 106px);
+}
+
+main #sidebar-opcoes{
+    background-color: var(--cor-headerescurinho);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main #sidebar-opcoes div{
+    height: 50px;
+    margin-bottom: 10px;
+    background-color: var(--cor-principal);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    border-radius: 20px;
+    margin-top: 10px;
+}
+
+main #sidebar-opcoes div a{
+    text-decoration: none;
+    font-weight: bolder;
+    font-size: 20px;
+    color: white;
+}
+
+main #informacoes-ui div{
+    background-color: #fff;
+    height: 82px;
+    border-radius: 20px;
+    margin: 10px;
+    width: calc(48% - 60px);
+    display: inline-block;
+    padding: 20px;
+}
+
+main #informacoes-ui #CadastroClientes{
+    border: 3px solid var(--cor-amarela);
+}
+
+main #informacoes-ui #CadastroUsuarios{
+    border: 3px solid var(--cor-verde);
+}
+
+main #informacoes-ui #CadastroConsultas{
+    border: 3px solid var(--cor-cinzaazul);
+}
+
+main #informacoes-ui #ConsultasCanceladas{
+    border: 3px solid var(--cor-vermelha);
 }
 
 main #cadastro-endereco #botaoreset{
